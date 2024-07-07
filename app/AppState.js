@@ -9,6 +9,8 @@ class ObservableAppState extends EventEmitter {
   account = null
   /**@type {DateandTime} */
   background = null
+  /**@type {DateandTime} */
+  newDate = null
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())

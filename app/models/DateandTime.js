@@ -10,4 +10,19 @@ export class DateandTime {
   get displayDate() {
     return new Date().toLocaleDateString('en-us', { month: 'short', day: '2-digit', year: 'numeric' })
   }
+  get timeTemplate() {
+    return `
+    <section id="currentTime">
+      <div class="container text-light">
+        <div class="row text-center bg-dark bg-gradient shadow ">
+          <div class="col-12">
+          <p class="fs-6 pt-3">${this.currentDate}</p>
+          </div>
+          <div class="col-12 p-3">
+            <h1>${this.currentTime}</h1>
+          </div>
+        </div>
+      </div>
+    </section>`
+  }
 }
