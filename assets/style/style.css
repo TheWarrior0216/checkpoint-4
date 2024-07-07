@@ -9,3 +9,10 @@
 .profile-picture.profile-picture-sm {
   height: 64px;
 }
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  background-image: url(https://www.hdwallpapers.in/download/northern_lights_aurora_borealis_4k_hd_nature-HD.jpg);
+}
