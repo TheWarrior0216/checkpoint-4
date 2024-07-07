@@ -12,8 +12,8 @@ export class DateandTime {
   }
   get timeTemplate() {
     return `
-    <section id="currentTime">
-      <div class="container text-light">
+    <section class=" ">
+      <div class=" container text-light ">
         <div class="row text-center bg-dark bg-gradient shadow ">
           <div class="col-12">
           <p class="fs-6 pt-3">${this.currentDate}</p>
