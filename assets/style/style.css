@@ -33,3 +33,12 @@ body {
   filter: blur(0px);
   transition: all 4s linear;
 }
+
+.bg-opacity {
+  opacity: 80%;
+}
+
+.opacity-fix {
+  opacity: 100%;
+  filter: unset;
+}

@@ -14,12 +14,12 @@ export class DateandTime {
     return `
     <section class="mt-5">
       <div class=" container text-light ">
-        <div class="row text-center bg-dark bg-gradient shadow ">
-          <div class="col-12">
-          <p class="fs-6 pt-3">${this.currentDate}</p>
+        <div class="row text-center bg-dark bg-gradient shadow rounded bg-opacity">
+          <div class="col-12 ">
+          <p class="fs-6 pt-3 opacity-fix">${this.currentDate}</p>
           </div>
           <div class="col-12 p-3">
-            <h1>${this.currentTime}</h1>
+            <h1 opacity-fix>${this.currentTime}</h1>
           </div>
         </div>
       </div>

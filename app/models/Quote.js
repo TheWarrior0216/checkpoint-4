@@ -5,7 +5,7 @@ export class Quote {
   }
   get quoteHtmlTemplate() {
     return `
-      <div class="container bg-dark mt-5 p-2">
+      <div class="container bg-dark mt-5 p-2 rounded bg-opacity">
         <div class="row text-center">
           <div class="col-12">
             <h1 class="secret-reveal">${this.quote}</h1>
