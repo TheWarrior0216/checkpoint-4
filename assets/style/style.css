@@ -16,3 +16,20 @@ body {
   background-color: black;
   background-image: url(https://www.hdwallpapers.in/download/northern_lights_aurora_borealis_4k_hd_nature-HD.jpg);
 }
+
+.secret-area {
+  opacity: 0;
+  transition: all 4s linear;
+  filter: blur(0px);
+}
+
+.secret-reveal {
+  opacity: 1;
+  cursor: wait;
+}
+
+.secret-reveal:hover+.secret-area {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 4s linear;
+}

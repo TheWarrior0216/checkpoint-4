@@ -12,7 +12,7 @@ export class DateandTime {
   }
   get timeTemplate() {
     return `
-    <section class=" ">
+    <section class="mt-5">
       <div class=" container text-light ">
         <div class="row text-center bg-dark bg-gradient shadow ">
           <div class="col-12">

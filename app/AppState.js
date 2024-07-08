@@ -1,4 +1,5 @@
 import { DateandTime } from "./models/DateandTime.js"
+import { Quote } from "./models/Quote.js"
 import { Weather } from "./models/Weather.js"
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
@@ -14,6 +15,8 @@ class ObservableAppState extends EventEmitter {
   newDate = null
   /**@type {Weather} */
   weather = null
+  /**@type {Quote} */
+  quote = null
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())

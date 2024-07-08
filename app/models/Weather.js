@@ -5,10 +5,10 @@ export class Weather {
     this.temperatureC = (data.temp - 273.15)
   }
   get fTempTemplate() {
-    return `<section id="temp" class="d-flex">
+    return `<section id="temp" class="d-flex mb-5">
       <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-2">
+        <div class="row justify-content-end text-center">
+          <div class="col-2 bg-info">
             <h1 role="button" onclick="app.WeatherController.switchTempC()">${(this.temperatureF).toFixed(2)}°F</h1>
           </div>
         </div>
@@ -16,10 +16,10 @@ export class Weather {
     </section>`
   }
   get cTempTemplate() {
-    return `<section id="temp" class="d-flex">
+    return `<section id="temp" class="d-flex mb-5">
       <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-2">
+        <div class="row justify-content-end text-center">
+          <div class="col-2 bg-dark">
             <h1 role="button" onclick="app.WeatherController.switchTempF()">${(this.temperatureC).toFixed(2)}°C</h1>
           </div>
         </div>
