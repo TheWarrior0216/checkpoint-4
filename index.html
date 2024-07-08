@@ -46,6 +46,26 @@
     <section id="quote">
 
     </section>
+
+    <section class="d-flex justify-content-end pt-5 mt-5 pe-5">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight " id="">To Do List</button>
+
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">To Do</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form onsubmit="app.ToDosController.addToDo()">
+            <input type="text" name="description" placeholder="Enter ToDo Item Here!">
+            <button type="submit" class="btn btn-success mdi mdi-check"></button>
+          </form>
+          <div id="todo"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- SECTION -->
